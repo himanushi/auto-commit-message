@@ -50,3 +50,9 @@ alias c="commit_with_gpt"
 ```
 source ~/.zshrc
 ```
+
+
+## 使い方
+```
+c
+```
