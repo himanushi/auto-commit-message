@@ -25,7 +25,7 @@ function generate_commit_message() {
     -H "Content-Type: application/json" \
     -H "Authorization: Bearer $OPENAI_API_KEY" \
     -d "{
-      \"model\": \"gpt-4\",
+      \"model\": \"gpt-4o-mini\",
       \"messages\": [
         {\"role\": \"system\", \"content\": \"日本語で、一行で収まるように commit message を作成しなさい。\"},
         {\"role\": \"user\", \"content\": \"${diff_output}\"}
