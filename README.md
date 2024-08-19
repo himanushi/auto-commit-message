@@ -54,5 +54,6 @@ source ~/.zshrc
 
 ## 使い方
 ```
+git add *
 c
 ```
