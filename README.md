@@ -27,7 +27,7 @@ function generate_commit_message() {
     -d "{
       \"model\": \"gpt-4o-mini\",
       \"messages\": [
-        {\"role\": \"system\", \"content\": \"日本語で、一行で収まるように commit message を作成しなさい。ダブルクォートなどの記号は不要です。\"},
+        {\"role\": \"system\", \"content\": \"日本語で、一行で収まるように、体言止めで commit message を作成しなさい。ダブルクォートや鉤括弧などの記号は不要です。\"},
         {\"role\": \"user\", \"content\": \"${diff_output}\"}
       ]
     }" | jq -r '.choices[0].message.content')
